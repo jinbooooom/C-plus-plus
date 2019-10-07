@@ -1,3 +1,5 @@
+[TOC]
+
 ## C++编程基础
 
 ### Hello, world!
