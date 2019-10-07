@@ -22,6 +22,8 @@ cout << s1 << endl << s2 << endl;
 
 ### 字符串
 
+- [string](https://blog.csdn.net/qq_30534935/article/details/82227364)
+
 #### C++ 风格
 
 ```C++
