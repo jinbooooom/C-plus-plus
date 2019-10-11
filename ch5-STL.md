@@ -30,14 +30,15 @@ STL 主要由两部分组成：一是容器，二是操作容器的泛型算法�
 #### vector
 
 - vector<int> vec;  产生空的容器
-
 - vector<int> vec(1024): 创建一个vector,元素个数为1024，对int 和double这种算术类型，不给初值，默认就是 0.
 - vector<int> vec(1024, 42):创建一个vector，元素个数为1024,且值均为42
 - vector<int> vec(begin,end):复制[begin,end)区间内另一个数组的元素到vector中，begin和end为指针或者迭代器
 - vec.push_back()
 - vec.pop_back()
 
-更多方法浏览[vector容器详细方法·菜鸟教程](https://www.runoob.com/w3cnote/cpp-vector-container-analysis.html)
+[C++ vector的用法（整理）](https://blog.csdn.net/wkq0825/article/details/82255984)
+
+[vector容器详细方法·菜鸟教程](https://www.runoob.com/w3cnote/cpp-vector-container-analysis.html)
 
 #### Map
 
@@ -90,8 +91,33 @@ for (; it != iset.end(); ++it)
 - set_difference()
 - set_symmetric_difference()
 
+### 算法
+
+#### sort
+
+```C++
+#include <algorithm>
+/* 函数sort(first, last, comp)；
+first : 待排序数组起始地址；
+last : 待排序数组结束地址；
+comp : 排序方式，该参数是可省参数，如果省略则以升序方式排序；
+*/
+int vec[] = { 5, 1, 9, 4, 6, 7, 2, 0, 1 };
+sort(vec, vec + 9); //就地改变，未使用 comp，默认按升序排列 
+```
+
+```C++
+ bool comp(int a, int b) {
+     return a > b;  //自己写排序规则，大的放在前面
+ }
+int vec[] = { 5, 1, 9, 4, 6, 7, 2, 0, 1 };
+sort(vec, vec + 9, comp); //使用 comp，按自己的规则降序排列
+```
+
 #### STL方法
 
 - 更多【ESC 78-92】
+- [C/C++STL常用容器用法总结常用容器](https://blog.csdn.net/weixin_41162823/article/details/79759081)
 - [STL·语雀](https://www.yuque.com/huihut/interview/stl_document)
 - [C++/boost数据结构](https://zhuanlan.zhihu.com/p/73000084)
+

@@ -63,7 +63,7 @@ endl 除了写 '\n' 之外，还调用 flush 函数，刷新缓冲区，把缓�
 包含头文件 stdlib.h，并在主程序中加入 `system("pause");` 可以在程序运行完以后使黑框暂停显示，等待输入，而不是闪退。
 
 #### cout 与 printf()
-cout 流速度较慢，如果速度过慢可以用 <stdio.h> 库中的 printf() 格式化输出函数，不需要 `using namespace std;`。但注意 printf() 中不能使用 endl。
+cout 流速度较慢，如果速度过慢可以用 <stdio.h> 库中的 printf() 格式化输出函数，不需要 `using namespace std;`。但注意 printf() 中不能使用 endl。printf 是函数。cout是ostream对象，和 << 配合使用。如果 printf 碰到不认识的类型就没办法了，而cout可以重载进行扩展。
 
 #### main函数与命令行参数
 
