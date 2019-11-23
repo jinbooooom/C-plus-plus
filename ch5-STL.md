@@ -36,6 +36,10 @@ STL 主要由两部分组成：一是容器，二是操作容器的泛型算法�
 - vec.push_back()
 - vec.pop_back()
 
+```C++
+vector<vector<char> >vec(row,vector<char>(col,'#'));//二维数组初始化
+```
+
 [C++ vector的用法（整理）](https://blog.csdn.net/wkq0825/article/details/82255984)
 
 [vector容器详细方法·菜鸟教程](https://www.runoob.com/w3cnote/cpp-vector-container-analysis.html)
