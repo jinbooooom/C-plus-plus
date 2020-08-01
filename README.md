@@ -5,6 +5,8 @@
 
 [ESC 15] 指 Essential C++ 中文版第 15 页
 
+**此仓库将不再更新，最新更新请访问[https://github.com/jinbooooom/Programming-language-QA](https://github.com/jinbooooom/Programming-language-QA)**
+
 ## 详细目录
 
 ### [C++编程基础](https://github.com/jinbooooom/C-plus-plus/blob/master/ch1-Basic%20C%2B%2B%20Programming.md#c%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80)
